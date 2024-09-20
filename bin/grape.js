@@ -94,9 +94,9 @@ const g = new Grape({
   dht_concurrency: maxDhtConcurrency,
   dht_nodeLiveness: dhtNodeLiveness,
   api_port: apiPort,
+  check_maxPayloadSize: maxPayloadSize,
   dht_peer_maxAge: maxDhtPeerAge,
-  cache_maxAge: maxCacheAge,
-  check_maxPayloadSize: maxPayloadSize
+  cache_maxAge: maxCacheAge
 })
 
 g.start((err) => {
